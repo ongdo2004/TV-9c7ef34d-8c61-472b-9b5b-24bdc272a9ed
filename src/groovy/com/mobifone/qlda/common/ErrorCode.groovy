@@ -1,8 +1,7 @@
 package com.mobifone.qlda.common
 
 enum ErrorCode {
-
-    FIELD_ERROR;
+    FIELD_ERROR, WS_EXCEPTION
 }
 
 

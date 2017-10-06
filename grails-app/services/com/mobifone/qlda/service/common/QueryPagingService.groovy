@@ -3,7 +3,7 @@ package com.mobifone.qlda.service.common
 import com.mobifone.qlda.common.table.TableQueryBuilder
 import com.mobifone.qlda.common.table.TableQueryParams
 import com.mobifone.qlda.common.table.TableQueryResponse
-import com.mobifone.qlda.domain.Criteria
+
 import grails.transaction.Transactional
 
 @Transactional

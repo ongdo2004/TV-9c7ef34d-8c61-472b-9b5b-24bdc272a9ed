@@ -1,4 +1,4 @@
-package com.mobifone.qlda.controller
+package com.tvServer
 
 import com.mobifone.qlda.service.ResultBean
 import com.mobifone.qlda.service.login.LoginForm

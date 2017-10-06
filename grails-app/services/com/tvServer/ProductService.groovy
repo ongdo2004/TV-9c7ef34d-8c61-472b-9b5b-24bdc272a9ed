@@ -1,13 +1,14 @@
-package com.mobifone.qlda.service.criteria
+package com.tvServer
 
 import com.mobifone.qlda.common.table.TableQueryBuilder
 import com.mobifone.qlda.common.table.TableQueryParams
 import com.mobifone.qlda.common.table.TableQueryResponse
-import com.mobifone.qlda.domain.Criteria
+import com.mobifone.qlda.domain.Product
+import com.mobifone.qlda.domain.ProductView
 import grails.transaction.Transactional
 
 @Transactional
-class CriteriaService {
+class ProductService {
 
     def queryPagingService;
 
@@ -22,7 +23,7 @@ class CriteriaService {
 
     def TableQueryResponse getList(TableQueryParams queryParams) {
 
-        def CriteriaService this_ = this;
+        def ProductService this_ = this;
 
         def TableQueryBuilder queryBuilder = new TableQueryBuilder() {
 
@@ -33,6 +34,11 @@ class CriteriaService {
             }
         };
 
-        return queryPagingService.query(queryBuilder, queryParams, Criteria);
+        return queryPagingService.query(queryBuilder, queryParams, ProductView);
+    }
+
+    Product getDefaultProduct() {
+
+        return null;
     }
 }
