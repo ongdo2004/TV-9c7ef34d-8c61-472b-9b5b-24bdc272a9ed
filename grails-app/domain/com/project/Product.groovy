@@ -1,6 +1,8 @@
 package com.project
 
-class Product {
+import com.project.domain.BaseDomain
+
+class Product implements BaseDomain {
 
     String name;
     String code;

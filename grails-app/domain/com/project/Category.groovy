@@ -1,6 +1,8 @@
 package com.project
 
-class Category {
+import com.project.domain.BaseDomain
+
+class Category implements BaseDomain {
 
     String code;
     String title;

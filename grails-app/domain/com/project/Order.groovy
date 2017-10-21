@@ -1,6 +1,8 @@
 package com.project
 
-class Order {
+import com.project.domain.BaseDomain
+
+class Order implements BaseDomain {
 
     UUID productId;
     Long quantity;

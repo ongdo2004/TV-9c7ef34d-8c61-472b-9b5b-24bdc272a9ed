@@ -1,6 +1,11 @@
 package com.project
 
-class UserProfile {
+import com.project.domain.BaseDomain
+
+class UserProfile implements BaseDomain {
+
+    String username;
+    String password;
 
     static constraints = {
     }

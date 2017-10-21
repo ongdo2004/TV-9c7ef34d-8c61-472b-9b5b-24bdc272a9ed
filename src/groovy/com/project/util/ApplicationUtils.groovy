@@ -6,4 +6,9 @@ class ApplicationUtils {
 
         return UUID.randomUUID().toString();
     }
+
+    static String encrypt(String source, String salt) {
+
+        return source + salt;
+    }
 }

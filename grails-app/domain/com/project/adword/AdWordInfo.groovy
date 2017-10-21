@@ -1,6 +1,8 @@
 package com.project.adword
 
-class AdWordInfo {
+import com.project.domain.BaseDomain
+
+class AdWordInfo implements BaseDomain {
 
     String url;
     String type;

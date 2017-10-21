@@ -1,6 +1,8 @@
 package com.project
 
-class ProductTechnicalCategory {
+import com.project.domain.BaseDomain
+
+class ProductTechnicalCategory implements BaseDomain {
 
     String code;
     String categoryId;

@@ -1,6 +1,8 @@
 package com.project
 
-class ProductTechnicalDetail {
+import com.project.domain.BaseDomain
+
+class ProductTechnicalDetail implements BaseDomain {
 
     String code;
     String detail;
