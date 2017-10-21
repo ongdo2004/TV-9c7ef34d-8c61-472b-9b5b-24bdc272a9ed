@@ -1,8 +1,8 @@
-package com.mobifone.qlda.service.common
+package com.project.common
 
-import com.mobifone.qlda.common.table.TableQueryBuilder
-import com.mobifone.qlda.common.table.TableQueryParams
-import com.mobifone.qlda.common.table.TableQueryResponse
+import com.project.common.table.TableQueryBuilder
+import com.project.common.table.TableQueryParams
+import com.project.common.table.TableQueryResponse
 
 import grails.transaction.Transactional
 

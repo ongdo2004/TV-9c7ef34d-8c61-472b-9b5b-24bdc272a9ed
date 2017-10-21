@@ -1,6 +1,6 @@
-package com.mobifone.qlda.service
+package com.project.service
 
-import com.mobifone.qlda.common.Error
+import com.project.common.Error
 
 class ResultBean {
 

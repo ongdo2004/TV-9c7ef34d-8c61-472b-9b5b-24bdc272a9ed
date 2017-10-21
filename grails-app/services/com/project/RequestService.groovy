@@ -1,4 +1,4 @@
-package com.mobifone.qlda.service
+package com.project.service
 
 
 import grails.transaction.Transactional

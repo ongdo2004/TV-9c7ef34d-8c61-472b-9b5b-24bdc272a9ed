@@ -1,4 +1,4 @@
-package com.mobifone.qlda.util
+package com.project.util
 
 class ApplicationUtils {
 

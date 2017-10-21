@@ -1,7 +1,7 @@
 package com.tvServer
 
-import com.mobifone.qlda.service.ResultBean
-import com.mobifone.qlda.service.login.LoginForm
+import com.project.service.ResultBean
+import com.project.service.login.LoginForm
 import grails.converters.JSON
 
 class LoginController {

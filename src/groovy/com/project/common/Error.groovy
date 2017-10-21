@@ -1,6 +1,5 @@
-package com.mobifone.qlda.common
+package com.project.common
 
-import grails.validation.ValidationErrors
 import org.springframework.validation.Errors
 
 class Error {

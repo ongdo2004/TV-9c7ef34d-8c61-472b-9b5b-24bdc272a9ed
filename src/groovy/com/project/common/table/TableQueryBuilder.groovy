@@ -1,4 +1,4 @@
-package com.mobifone.qlda.common.table
+package com.project.common.table
 
 public interface TableQueryBuilder<T> {
 

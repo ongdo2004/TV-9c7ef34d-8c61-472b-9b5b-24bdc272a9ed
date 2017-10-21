@@ -1,7 +1,7 @@
-package com.mobifone.qlda.filters
+package com.project.filters
 
 
-import com.mobifone.qlda.service.ApplicationConstants
+import com.project.service.ApplicationConstants
 
 class AuthenticateFilters {
 

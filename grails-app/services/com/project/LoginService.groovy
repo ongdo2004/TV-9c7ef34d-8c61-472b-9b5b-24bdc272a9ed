@@ -1,8 +1,8 @@
-package com.mobifone.qlda.service
+package com.project.service
 
-import com.mobifone.qlda.common.Error
-import com.mobifone.qlda.service.login.LoginForm
-import com.mobifone.qlda.util.ApplicationUtils
+import com.project.common.Error
+import com.project.service.login.LoginForm
+import com.project.util.ApplicationUtils
 import grails.transaction.Transactional
 
 @Transactional

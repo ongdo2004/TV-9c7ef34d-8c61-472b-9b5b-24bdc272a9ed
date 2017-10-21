@@ -1,15 +1,25 @@
-package com.tvServer
+package com.project.service
 
-import com.mobifone.qlda.common.table.TableQueryBuilder
-import com.mobifone.qlda.common.table.TableQueryParams
-import com.mobifone.qlda.common.table.TableQueryResponse
+import com.project.common.table.TableQueryBuilder
+import com.project.common.table.TableQueryParams
+import com.project.common.table.TableQueryResponse
 
 import grails.transaction.Transactional
 
 @Transactional
-class ProductService {
+class UserProfileService {
 
     def queryPagingService;
+
+    UserProfile getUserProfile(String userToken) {
+
+        return null;
+    }
+
+    UserProfileView getUserProfileView(UUID uuid) {
+
+        return UserProfileView.get(uuid);
+    }
 
     private void buildQuery(TableQueryParams queryParams, def builder) {
 
@@ -22,7 +32,7 @@ class ProductService {
 
     def TableQueryResponse getList(TableQueryParams queryParams) {
 
-        def ProductService this_ = this;
+        def UserProfileService this_ = this;
 
         def TableQueryBuilder queryBuilder = new TableQueryBuilder() {
 
@@ -33,11 +43,6 @@ class ProductService {
             }
         };
 
-        return queryPagingService.query(queryBuilder, queryParams, ProductView);
-    }
-
-    Product getDefaultProduct() {
-
-        return null;
+        return queryPagingService.query(queryBuilder, queryParams, UserProfileView);
     }
 }

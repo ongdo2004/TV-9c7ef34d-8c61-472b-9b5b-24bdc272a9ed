@@ -1,4 +1,4 @@
-package com.mobifone.qlda.service.login
+package com.project.service.login
 
 import grails.validation.Validateable
 

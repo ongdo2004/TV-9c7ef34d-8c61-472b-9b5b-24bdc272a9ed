@@ -1,4 +1,4 @@
-package com.mobifone.qlda.domain
+package com.project.domain
 
 trait BaseDomain {
 
