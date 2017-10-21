@@ -1,7 +1,6 @@
 package com.tvServer
 
-import com.mobifone.qlda.domain.Product
-import com.mobifone.qlda.domain.UserProfile
+
 import com.mobifone.qlda.service.BaseService
 import com.mobifone.qlda.service.ws.RenewCmd
 import com.mobifone.qlda.service.ws.sendOwl.Order

@@ -1,6 +1,6 @@
 package com.tvServer
 
-import com.mobifone.qlda.domain.UserProfile
+
 import grails.transaction.Transactional
 
 @Transactional

@@ -2,7 +2,7 @@ package com.mobifone.qlda.service.ws
 
 import com.mobifone.qlda.common.Error
 import com.mobifone.qlda.common.ErrorCode
-import com.mobifone.qlda.domain.WebserviceHistory
+
 import grails.converters.JSON
 
 abstract class BaseCommand implements CommandInterface {

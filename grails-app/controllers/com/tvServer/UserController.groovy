@@ -1,7 +1,7 @@
 package com.tvServer
 
 import com.mobifone.qlda.common.table.TableQueryParams
-import com.mobifone.qlda.domain.UserProfileView
+
 import com.mobifone.qlda.service.ResultBean
 import com.mobifone.qlda.service.user.RegisterForm
 import grails.converters.JSON

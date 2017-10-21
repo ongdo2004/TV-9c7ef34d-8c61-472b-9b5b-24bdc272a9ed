@@ -1,6 +1,6 @@
 package com.mobifone.qlda.filters
 
-import com.mobifone.qlda.domain.UserProfile
+
 import com.mobifone.qlda.service.ApplicationConstants
 
 class AuthenticateFilters {

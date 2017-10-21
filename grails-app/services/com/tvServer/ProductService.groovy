@@ -3,8 +3,7 @@ package com.tvServer
 import com.mobifone.qlda.common.table.TableQueryBuilder
 import com.mobifone.qlda.common.table.TableQueryParams
 import com.mobifone.qlda.common.table.TableQueryResponse
-import com.mobifone.qlda.domain.Product
-import com.mobifone.qlda.domain.ProductView
+
 import grails.transaction.Transactional
 
 @Transactional
