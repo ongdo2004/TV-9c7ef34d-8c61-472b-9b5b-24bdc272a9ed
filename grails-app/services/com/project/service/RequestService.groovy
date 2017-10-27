@@ -1,6 +1,6 @@
 package com.project.service
 
-
+import com.project.UserProfile
 import grails.transaction.Transactional
 
 @Transactional

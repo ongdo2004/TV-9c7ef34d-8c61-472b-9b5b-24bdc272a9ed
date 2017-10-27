@@ -7,7 +7,9 @@ class AdWordController {
     def createAdWord(AdWordForm form) {
     }
 
-    def createAdWord(List<AdWordForm> form) {
+    def createAdWords() {
+
+//        List<AdWordForm> form
     }
 
     def updateAdWord(AdWordForm form) {

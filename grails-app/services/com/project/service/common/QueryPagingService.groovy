@@ -1,4 +1,4 @@
-package com.project.common
+package com.project.service.common
 
 import com.project.common.table.TableQueryBuilder
 import com.project.common.table.TableQueryParams

@@ -1,9 +1,10 @@
 package com.project.service
 
+import com.project.UserProfile
 import com.project.common.table.TableQueryBuilder
 import com.project.common.table.TableQueryParams
 import com.project.common.table.TableQueryResponse
-
+import com.project.view.UserProfileView
 import grails.transaction.Transactional
 
 @Transactional

@@ -8,12 +8,16 @@ class ServiceSolutionController {
     def createServiceSolution(ServiceSolutionForm form) {
     }
 
-    def createServiceSolution(List<ServiceSolutionForm> form) {
+    def createServiceSolutions() {
+
+//        List<ServiceSolutionForm> form
     }
 
     def updateServiceSolution(ServiceSolutionForm form) {
     }
 
-    def activeToggleServiceSolution(String status, List<String> serviceSolutionIds) {
+    def activeToggleServiceSolution() {
+
+//        String status, List<String> serviceSolutionIds
     }
 }

@@ -8,12 +8,16 @@ class ProductController {
     def createProduct(ProductForm form) {
     }
 
-    def createProducts(List<ProductForm> form) {
+    def createProducts() {
+
+//        List<ProductForm> form
     }
 
     def updateProduct(ProductForm form) {
     }
 
-    def activeToggleProducts(String status, List<String> productIds) {
+    def activeToggleProducts() {
+
+//        String status, List<String> productIds
     }
 }

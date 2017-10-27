@@ -10,7 +10,6 @@ class LoginService extends BaseService {
 
     static scope = "request";
 
-
     private LoginForm form;
 
     private Boolean validateForm() {
@@ -40,7 +39,7 @@ class LoginService extends BaseService {
 
         if (!this.validate()) return false;
 
-        this.result.userProfile = UserProfileService.USER_PROFILE_DUMMY;
+//        this.result.userProfile = UserProfileService.USER_PROFILE_DUMMY;
 
         this.result.token = ApplicationUtils.generateUUID();
 

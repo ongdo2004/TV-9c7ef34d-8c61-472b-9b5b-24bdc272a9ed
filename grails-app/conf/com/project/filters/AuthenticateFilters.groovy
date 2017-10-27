@@ -1,6 +1,6 @@
 package com.project.filters
 
-
+import com.project.UserProfile
 import com.project.service.ApplicationConstants
 
 class AuthenticateFilters {

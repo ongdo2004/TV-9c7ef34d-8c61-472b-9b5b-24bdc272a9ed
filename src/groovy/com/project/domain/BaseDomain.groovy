@@ -5,5 +5,5 @@ trait BaseDomain {
     UUID id;
     Date lastUpdateTime;
     String lastUpdateUser;
-    Boolean isDeleted = false;
+    Boolean isDeleted;
 }
