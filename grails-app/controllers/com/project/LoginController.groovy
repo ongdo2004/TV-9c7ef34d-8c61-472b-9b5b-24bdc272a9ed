@@ -16,7 +16,7 @@ class LoginController {
 
     def login() {
 
-        def LoginForm form = bindData(new LoginForm(), this.request.JSON);
+        LoginForm form = bindData(new LoginForm(), this.request.JSON);
 
         loginService.login(form);
 

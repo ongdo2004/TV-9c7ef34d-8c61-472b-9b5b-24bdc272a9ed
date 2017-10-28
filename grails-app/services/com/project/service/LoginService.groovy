@@ -5,7 +5,6 @@ import com.project.UserSession
 import com.project.common.Error
 import com.project.service.login.LoginForm
 import com.project.util.ApplicationUtils
-import grails.converters.JSON
 import grails.transaction.Transactional
 
 @Transactional

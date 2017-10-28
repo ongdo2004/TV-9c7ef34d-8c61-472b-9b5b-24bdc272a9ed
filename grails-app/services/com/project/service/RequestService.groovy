@@ -8,6 +8,11 @@ class RequestService {
 
     static scope = "request";
 
-    def UserProfile userProfile;
-    def Date nowDate;
+    UserProfile userProfile;
+
+    Date nowDate;
+
+    String getUsername() {
+        return this.userProfile?.username;
+    }
 }

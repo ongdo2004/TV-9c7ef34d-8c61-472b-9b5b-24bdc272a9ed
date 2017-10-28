@@ -4,7 +4,7 @@ import com.project.common.Error
 
 class BaseService {
 
-    Map result = [:];
+    def result = [:];
 
     List<Error> errors = [];
 
