@@ -2,6 +2,7 @@ package com.project
 
 import com.project.service.ResultBean
 import com.project.service.login.LoginForm
+import com.project.view.UserProfileView
 import grails.converters.JSON
 
 class LoginController {
@@ -10,6 +11,8 @@ class LoginController {
 
     def loginService;
     def requestService;
+    def changePasswordService;
+    def userProfileService;
 
     def login() {
 
@@ -22,11 +25,17 @@ class LoginController {
 
     def getUserProfile() {
 
-        render(new ResultBean(isSuccess: true, result: this.requestService.userProfile) as JSON);
+        UserProfileView userProfileView = userProfileService.getUserProfileView(this.requestService.userProfile.id);
+
+        render(new ResultBean(isSuccess: true, result: userProfileView) as JSON);
     }
 
     def changePassword() {
 
-        def UserProfileForm form = bindData(new UserProfileForm(), this.request.JSON);
+        def ChangePasswordForm form = bindData(new ChangePasswordForm(), this.request.JSON);
+
+        changePasswordService.changePassword(form);
+
+        render(changePasswordService.resultBean as JSON);
     }
 }

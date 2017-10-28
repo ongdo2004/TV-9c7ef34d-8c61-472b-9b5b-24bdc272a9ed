@@ -6,7 +6,7 @@ class BaseService {
 
     Map result = [:];
 
-    List<Error> errors;
+    List<Error> errors = [];
 
     ResultBean getResultBean() {
 

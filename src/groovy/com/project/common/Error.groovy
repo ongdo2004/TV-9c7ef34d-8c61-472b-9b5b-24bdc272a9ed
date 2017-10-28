@@ -4,7 +4,7 @@ import org.springframework.validation.Errors
 
 class Error {
 
-    ErrorCode errorCode;
+    String errorCode;
 
     def params;
 

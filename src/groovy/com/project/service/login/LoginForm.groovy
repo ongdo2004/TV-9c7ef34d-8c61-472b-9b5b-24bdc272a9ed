@@ -10,7 +10,7 @@ class LoginForm {
 
     static constraints = {
 
-        username nullable: false, blank: false;
-        password nullable: false, blank: false;
+        username(nullable: false, blank: false, size: 0..20);
+        password(nullable: false, blank: false, size: 0..20);
     }
 }

@@ -2,6 +2,7 @@ package com.project.filters
 
 import com.project.UserProfile
 import com.project.service.ApplicationConstants
+import com.project.service.RequestService
 
 class AuthenticateFilters {
 
@@ -13,16 +14,23 @@ class AuthenticateFilters {
 
             before = {
 
-                if (controllerName == "login" && actionName == "login") {
+                def requestService = applicationContext.requestService;
+
+                Date now = requestService.nowDate = new Date();
+
+                println ((controllerName == "migration") || (controllerName == "login" && actionName == "login"));
+
+                if ((controllerName == "migration") || (controllerName == "login" && actionName == "login")) {
 
                 } else {
 
                     String userToken = params.get(ApplicationConstants.USER_TOKEN);
 
-                    UserProfile userProfile = userProfileService.getUserProfile(userToken);
+                    println userToken;
+
+                    UserProfile userProfile = userProfileService.getUserProfile(userToken, now);
 
                     applicationContext.requestService.userProfile = userProfile;
-                    applicationContext.requestService.nowDate = new Date();
                 }
             }
 

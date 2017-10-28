@@ -1,9 +1,11 @@
 package com.project.service
 
 import com.project.UserProfile
+import com.project.UserSession
 import com.project.common.table.TableQueryBuilder
 import com.project.common.table.TableQueryParams
 import com.project.common.table.TableQueryResponse
+import com.project.util.ApplicationUtils
 import com.project.view.UserProfileView
 import grails.transaction.Transactional
 
@@ -12,14 +14,13 @@ class UserProfileService {
 
     def queryPagingService;
 
-    UserProfile getUserProfile(String userToken) {
+    UserProfile getUserProfile(String userToken, Date now) {
 
-        return null;
-    }
+        UserSession session = UserSession.findByIdAndExpireDateGreaterThan(
+                ApplicationUtils.convertToUUID(userToken), now
+        );
 
-    UserProfileView getUserProfileView(UUID uuid) {
-
-        return UserProfileView.get(uuid);
+        return session ? UserProfile.findByIdAndIsDeleted(session.userProfileId, false) : null;
     }
 
     private void buildQuery(TableQueryParams queryParams, def builder) {
@@ -31,7 +32,7 @@ class UserProfileService {
         println builder.class;
     }
 
-    def TableQueryResponse getList(TableQueryParams queryParams) {
+    TableQueryResponse getList(TableQueryParams queryParams) {
 
         def UserProfileService this_ = this;
 
@@ -45,5 +46,10 @@ class UserProfileService {
         };
 
         return queryPagingService.query(queryBuilder, queryParams, UserProfileView);
+    }
+
+    UserProfileView getUserProfileView(UUID id) {
+
+        return UserProfileView.get(id);
     }
 }
